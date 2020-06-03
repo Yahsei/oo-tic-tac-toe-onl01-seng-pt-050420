@@ -50,7 +50,7 @@ class TicTacToe
         puts "Please enter a number between 1-9"
         input = gets.strip
         input = input_to_index(input)
-        self.valid_move?
+        if self.valid_move?
       
       end
 end
