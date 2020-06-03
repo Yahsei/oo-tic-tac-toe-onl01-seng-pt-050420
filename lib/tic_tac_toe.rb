@@ -42,7 +42,7 @@ class TicTacToe
         @board.count {|pos| pos == "X" || pos == "O"}
       end
       
-      
+      def current_player
       
       
       
