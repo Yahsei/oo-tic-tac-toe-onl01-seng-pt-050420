@@ -47,7 +47,7 @@ class TicTacToe
       end
       
       def turn 
-        puts "Please enter a number between 1-9"
+        puts "Where would you like to move? (1-9)"
         input = gets.strip
         input = input_to_index(input)
         if self.valid_move?(index)
