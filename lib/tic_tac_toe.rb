@@ -55,4 +55,4 @@ class TicTacToe
        else
          self.turn
        end
-end
+     end
