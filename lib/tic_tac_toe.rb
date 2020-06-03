@@ -11,7 +11,7 @@ class TicTacToe
         [2,4,6] #Diagonal
       ]
    def initialize 
-    @board = Array.new (9, " ") #=> (" "," "," "," "," "," "," "," "," ")
+    @board = Array.new(9, " ") #=> (" "," "," "," "," "," "," "," "," ")
  end
 end
 end
