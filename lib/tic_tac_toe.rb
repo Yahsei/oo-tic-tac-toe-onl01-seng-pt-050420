@@ -35,7 +35,7 @@ class TicTacToe
       end
       
       def valid_move?(index)
-        position_taken?
+        position_taken?[index]
       
       end
 end
