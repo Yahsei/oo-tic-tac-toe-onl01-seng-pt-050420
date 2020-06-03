@@ -48,7 +48,7 @@ class TicTacToe
       
       def turn 
         puts "Where would you like to move? (1-9)"
-        input = 
+        input = input_to_index(gets.chomp)
         input = input_to_index(input)
         if self.valid_move?(index)
           self.move(index, self.current_player)
