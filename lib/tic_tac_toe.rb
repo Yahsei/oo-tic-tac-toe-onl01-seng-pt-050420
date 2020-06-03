@@ -34,4 +34,5 @@ class TicTacToe
         @board[index] != " "
       end
       
+      def valid
 end
