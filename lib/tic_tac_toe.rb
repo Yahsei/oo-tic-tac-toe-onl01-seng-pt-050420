@@ -51,7 +51,7 @@ class TicTacToe
         input = gets.strip
         input = input_to_index(input)
         if self.valid_move?(index)
+       
        else
-      
-      end
+       end
 end
