@@ -59,6 +59,42 @@ class TicTacToe
        end
      end
      
-     
-     
-  end
+       def won?
+        winner = nil
+        WIN_COMBINATIONS.each do | combination |
+            if combination.all? { |el| @board[el] == "X" }
+                winner = combination
+            elsif combination.all? { |el| @board[el] == "O" }
+                winner = combination
+            end
+        end
+        winner
+    end
+
+    def full?
+        turn_count == 9
+    end
+
+    def draw?
+        full? && !won?
+    end
+
+    def over?
+        draw? || won?
+    end
+
+    def winner
+        if won?
+            @board[won?[0]]
+        end
+    end
+
+    def play
+        turn until over?
+        if winner
+            puts "Congratulations #{winner}!"
+        else
+            puts "Cat's Game!"
+        end
+    end
+end
