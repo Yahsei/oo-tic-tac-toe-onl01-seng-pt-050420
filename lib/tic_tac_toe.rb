@@ -53,5 +53,6 @@ class TicTacToe
         if self.valid_move?(index)
           self.move(index, self.current_player)
        else
+         self.turn
        end
 end
