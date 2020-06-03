@@ -47,5 +47,7 @@ class TicTacToe
       end
       
       def turn 
+        puts
+        input.chomp
       end
 end
