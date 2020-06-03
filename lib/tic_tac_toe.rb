@@ -54,6 +54,7 @@ class TicTacToe
           self.move(index, self.current_player)
           self.display_board
        else
+         puts "Sorry, not a valid move!"
          self.turn
        end
      end
